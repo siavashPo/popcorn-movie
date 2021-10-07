@@ -23,7 +23,7 @@ function MovieSliderTopSite({movies}) {
                             "modifier": 1,
                             "slideShadows": true
                         }} className="mySwiper">
-                    {movies.map(item =>
+                    {movies.slice(0, 11).map(item =>
                         <SwiperSlide key={item.id}>
                             <Link to={`movie/${item.id}`}>
                                 <SwiperSlide><img alt='' src={imgSrc(item.poster_path)}/></SwiperSlide>
