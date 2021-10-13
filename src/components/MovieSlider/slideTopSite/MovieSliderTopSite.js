@@ -12,9 +12,6 @@ SwiperCore.use([EffectCoverflow, Pagination])
 
 function MovieSliderTopSite({movies}) {
     return (
-        <Row className={Container}>
-            <Col span={4}></Col>
-            <Col span={16}>
                 <Swiper effect={'coverflow'} grabCursor={true} centeredSlides={false} slidesPerView={'auto'}
                         coverflowEffect={{
                             "rotate": 50,
@@ -31,9 +28,6 @@ function MovieSliderTopSite({movies}) {
                         </SwiperSlide>
                     )}
                 </Swiper>
-            </Col>
-            <Col span={4}></Col>
-        </Row>
     )
 }
 

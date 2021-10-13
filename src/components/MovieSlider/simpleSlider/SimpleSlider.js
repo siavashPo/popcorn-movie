@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, {
-    Pagination, Navigation, Scrollbar, A11y
+    Pagination, Navigation, Scrollbar
 } from 'swiper';
 import {Card, Col, Row} from "antd";
 import imgSrc from "../../../helper/image";
@@ -11,8 +11,6 @@ SwiperCore.use([Pagination,Navigation]);
 
 function SimpleSlider({movies}) {
     return (
-        <Row>
-            <Col span={16} offset={4}>
                 <Swiper
                     modules={[Scrollbar]}
                     spaceBetween={20}
@@ -33,8 +31,6 @@ function SimpleSlider({movies}) {
                             </SwiperSlide>
                     )}
                 </Swiper>
-            </Col>
-        </Row>
     )
 }
 

@@ -6,8 +6,6 @@ import {Link} from "react-router-dom";
 
 function BreakpointSlider({movies}) {
     return (
-        <Row>
-            <Col span={16} offset={4}>
                 <Swiper slidesPerView={8} spaceBetween={10} breakpoints={{
                     "640": {
                         "slidesPerView": 8,
@@ -30,8 +28,6 @@ function BreakpointSlider({movies}) {
                         </SwiperSlide>
                     )}
                 </Swiper>
-            </Col>
-        </Row>
     )
 }
 

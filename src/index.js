@@ -7,12 +7,15 @@ import 'antd/dist/antd.dark.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import LayoutSite from "./components/LayoutSite/LayoutSite";
 import Page from "./pages/Page";
+import UserProvider from "./context/UserContext";
 ReactDOM.render(
-    <Router>
-        <LayoutSite>
-            <Page />
-        </LayoutSite>
-    </Router>
+    <UserProvider>
+        <Router>
+            <LayoutSite>
+                <Page />
+            </LayoutSite>
+        </Router>
+    </UserProvider>
     ,
   document.getElementById('root')
 );
